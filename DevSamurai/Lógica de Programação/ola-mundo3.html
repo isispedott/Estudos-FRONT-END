@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var idioma = prompt('Por favor, digite o código do idioma.')
+        var variacao = prompt('Por favor, digite a variação.')
+
+        // pt-br = Olá!
+        //pt-pt = Olá!
+        //en-us = Hi
+        //en-gb = Hello
+
+        //idioma == "pt" && (variacão == "br" || variacao == "pt")
+
+        if (idioma == "pt" && (variacao == "br" || variacao == "pt"))  {
+            alert("Olá!")
+        } else if (idioma == "en" && variacao == "us") {
+            alert('Hi!')
+        } else if (idioma == "en" && variacao == "gb") {
+            alert('Hello!')
+        } else {
+            alert("Idioma e/ou variação não reconhecido(s).")
+        } 
+            
+    
+
+
+
+
+
+    </script>
+</body>
+</html>
