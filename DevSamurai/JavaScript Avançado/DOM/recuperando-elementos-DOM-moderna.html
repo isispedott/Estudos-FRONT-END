@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+</head>
+<body>
+    <img src="gatinho.jpg" alt="cat">
+
+    <h1 id="person-name" class="title">Mimi</h1>
+    <h2>Programador JavaScript</h2>
+    <p>
+        Conhecimento em programação Frontend, Backend para desenvolvimento Fullstack.
+
+    </p>
+
+    <p>Para mais detalhes, por favor, visite meu <a href="#">Github</a>
+    </p>
+
+    <script>
+        //Acessando os nós do DOM
+
+        //Forma "antiga"
+        //document.getElementById()
+        //document.getElementByTagName()
+        //document.getElementsByClassName()
+
+        //Forma moderna...
+        //document.querySelector('selector')
+        //document.querySelectorAll('selector')
+        //element.querySelector('selector')
+        //element.querySelectorAll('selector')
+
+        //CSS Selectors
+
+        //Universal: *
+        //Id: #el-id
+        //Tag: <el>
+        //Class: el-class
+        //Atributos: [attr=value]
+        //Grupos (vírgula): el, el
+        //Descendentes (espaço): el el
+        //Childs (>): el > el
+
+        //console.log("*", document.querySelectorAll("*"))
+        //console.log("id", document.querySelector("#person-name")) 
+        //console.log("tag", document.querySelectorAll("p"))
+        //console.log("class", document.querySelectorAll(".text"))
+        //console.log("attr", document.querySelectorAll("a[href]"))
+        //console.log(
+        //    "attr",
+        //    document.querySelectorAll("a[href = #]")
+       // )
+
+       //Iterando toda a árvore DOM...
+       for (const el of document.querySelectorAll("*")) {
+        console.log("el", el)
+       }
+        
+
+    </script>
+    
+    
+

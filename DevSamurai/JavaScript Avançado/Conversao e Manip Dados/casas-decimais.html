@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //toFixed() - quantidade de casas depois da vírgula que queremos fixar
+        //Math.ceil()
+        //Math.floor()
+        //Math.round()
+        //new Intl.NumberFormat().format()
+
+        let value = 1234.59
+
+        console.log(value.toFixed(1))
+        console.log(Math.ceil(value))
+        console.log(Math.floor(value))
+        console.log(Math.round(value))
+
+        console.log(
+            new Intl.NumberFormat("pt-BR", {
+                style: "currency",
+                currency: "BRL",
+            }).format(value)
+        )
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

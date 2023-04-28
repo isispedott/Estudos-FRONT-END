@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Clique me</button>
+    <a href="https://www.google.com.br/">Clique me</a>
+
+
+    <script>
+        const button = document.querySelector("button")
+        button.addEventListener("click", () => {
+            console.log("Clicou no botão")
+        })
+        const hyperlink = document.querySelector("a")
+        hyperlink.addEventListener("click", (event) => {
+            event.preventDefault()
+            console.log("Clicou no hyperlink")
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="gatinho.jpg" alt="cat">
+
+    <h1 id="person-name" class="text">Seu nome</h1>
+    <h2>Programador JavaScript</h2>
+    <p class="text">
+        Conhecimento em programação Frontend, Backend para desenvolvimento Fullstack.
+
+    </p>
+
+    <p>Para mais detalhes, por favor, visite meu <a href="#">Github</a>
+    </p>
+
+
+    <script>
+        //Alterando um objeto DOM
+
+
+        //Recuperando o objeto:
+        const titleEl = document.querySelector("#person-name")
+        console.log("titleEl value:", titleEl.innerHTML)
+
+        //Atribuindo novo valor:
+        titleEl.innerHTML = "Mimi"
+        titleEl.style.color = "green"
+
+
+
+
+    </script>
+
+</body>
+</html>

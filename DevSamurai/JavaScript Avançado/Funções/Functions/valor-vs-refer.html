@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mult(n) {
+            let res = n
+            n *= n
+            return n
+        }
+
+        let numVal = 10
+        console.log(mult(numVal))
+        console.log(numVal)
+
+
+        function multObj(obj) {
+            obj.value *= obj.value
+
+            return obj
+        }
+
+        const numObj = { value: 10}
+        console.log(multObj(numObj))
+
+
+    </script>
+</body>
+</html>

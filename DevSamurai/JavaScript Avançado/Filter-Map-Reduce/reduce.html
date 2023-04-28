@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // array.reduce(callback [, initialValue]) 
+        //o reduce vai ter, basicamente, uma função callback como argumento e um valor inicial que você pode incluir
+        //Callback: função que é executada em cada valor no array, recebe quatro argumentos;
+        //acumulator: O valor retornado na últma invocação do callback, ou o argumento Valor Inicial, se fornecido
+        //currentValue: o elemento atual que está sendo processado no array
+        //indice/index: o índice do elemento atual que está sendo processado no array;
+        //initialValue: Opcional. Objeto a ser usado como o primeiro argumento da primeida chamada da função callback.
+
+
+        let values = [1.5, 2, 4, 10]
+
+        function callback(acumulator, currentValue, index, array) {
+            console.log(`acumulator`, acumulator)
+            console.log(`currentValue`, currentValue)
+            console.log(`index`, index)
+            console.log(`array`, array)
+            console.log ("---")
+
+            return acumulator
+        }
+        
+        values.reduce(callback)
+
+
+
+
+
+
+    </script>
+</body>
+</html>
